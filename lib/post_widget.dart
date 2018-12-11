@@ -44,7 +44,6 @@ class _PostState extends State<Post> {
         .listen((data) {
       if (this.mounted)
         setState(() => _likes = data.documents);
-      print(data.documents.length);
     });
   }
 

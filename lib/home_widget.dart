@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'placeholder_widget.dart';
+import 'place_list_widget.dart';
 import 'feed_widget.dart';
 
 class Home extends StatefulWidget {
@@ -13,7 +14,7 @@ class _HomeState extends State<Home> {
   int _currentIndex = 0;
   final List<Widget> _children = [
     Feed(),
-    PlaceholderWidget(Colors.red),
+    PlaceList(),
     PlaceholderWidget(Colors.green)
   ];
 
