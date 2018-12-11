@@ -21,7 +21,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Chiron'),
+        title: Text('Home'),
       ),
       body: _children[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
@@ -33,8 +33,8 @@ class _HomeState extends State<Home> {
             title: new Text('Home'),
           ),
           BottomNavigationBarItem(
-            icon: new Icon(Icons.mail),
-            title: new Text('Messages'),
+            icon: new Icon(Icons.map),
+            title: new Text('Places'),
           ),
           BottomNavigationBarItem(
               icon: Icon(Icons.person), title: Text('Profile'))

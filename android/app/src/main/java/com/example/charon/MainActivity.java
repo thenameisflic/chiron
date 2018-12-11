@@ -1,4 +1,4 @@
-package com.example.charon;
+package com.example.chiron;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

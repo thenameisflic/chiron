@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'enums.dart';
+import 'placeholder_box_widget.dart';
 
 class PostBody extends StatelessWidget {
   final String mediaUrl;
@@ -21,6 +22,24 @@ class PostBody extends StatelessWidget {
               this.content,
               style: TextStyle(fontSize: 14),
             ),
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class PlaceholderPostBody extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.fromLTRB(16.0, 0, 16.0, 12.0),
+      child: Column(
+        children: [
+          Container(
+            padding: const EdgeInsets.only(bottom: 4.0),
+            height: 120,
+            child: PlaceholderBox(),
           )
         ],
       ),
